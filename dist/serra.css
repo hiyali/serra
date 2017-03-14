@@ -1,0 +1,111 @@
+/* ----------- libs ------------ */
+/* ----------- packages ------------ */
+.sr-box {
+/* ----------- for container ------------ */
+  display: flex;
+/* ----------- for items ------------ */
+/*
+  for n in 1..12
+    .item-{n}
+      flex: n
+    .grow-{n}
+      flex-grow: n
+    .shrink-{n}
+      flex-shrink: n
+    .basis-{n}
+      flex-basis: n
+
+  for n in -12..12
+    .order-{n}
+      order: n
+  // */
+}
+.sr-box.dir-row {
+  flex-direction: row;
+}
+.sr-box.dir-row-reverse {
+  flex-direction: row-reverse;
+}
+.sr-box.dir-col {
+  flex-direction: column;
+}
+.sr-box.dir-col-reverse {
+  flex-direction: column-reverse;
+}
+.sr-box.nowrap {
+  flex-wrap: nowrap;
+}
+.sr-box.wrap {
+  flex-wrap: wrap;
+}
+.sr-box.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.sr-box.content-start {
+  justify-content: flex-start;
+}
+.sr-box.content-end {
+  justify-content: flex-end;
+}
+.sr-box.content-center {
+  justify-content: center;
+}
+.sr-box.content-space-between {
+  justify-content: space-between;
+}
+.sr-box.content-space-around {
+  justify-content: space-around;
+}
+.sr-box.items-start {
+  align-items: flex-start;
+}
+.sr-box.items-end {
+  align-items: flex-end;
+}
+.sr-box.items-center {
+  align-items: center;
+}
+.sr-box.items-stretch {
+  align-items: stretch;
+}
+.sr-box.items-baseline {
+  align-items: baseline;
+}
+.sr-box.align-start {
+  align-content: flex-start;
+}
+.sr-box.align-end {
+  align-content: flex-end;
+}
+.sr-box.align-center {
+  align-content: center;
+}
+.sr-box.align-stretch {
+  align-content: stretch;
+}
+.sr-box.align-space-between {
+  align-content: space-between;
+}
+.sr-box.align-space-around {
+  align-content: space-around;
+}
+.sr-box.self-start {
+  align-self: flex-start;
+}
+.sr-box.self-end {
+  align-self: flex-end;
+}
+.sr-box.self-center {
+  align-self: center;
+}
+.sr-box.self-baseline {
+  align-self: baseline;
+}
+.sr-box.self-stretch {
+  align-self: stretch;
+}
+/* ----------- stylus functions ------------ */
+/*
+p : explain css
+lookup : output variable value
+*/

@@ -1,0 +1,16 @@
+
+/* ----------- get normalize name ------------*/
+
+splitJoin(delim, val, with = '')
+  join(with, split(delim, val))
+
+getName(name = $ns)
+  if match('flex-', name)
+    splitJoin('flex-', name)
+  else if match('direction', name)
+    splitJoin('direction', name, 'dir')
+  else if match('column', name)
+    splitJoin('column', name, 'col')
+  else
+    return name
+

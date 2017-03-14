@@ -1,0 +1,39 @@
+{
+  "name": "serra",
+  "version": "0.1.0",
+  "description": "For beauty style",
+  "main": "src/index.js",
+  "dependencies": {
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "poststylus": "^0.2.3",
+    "rucksack-css": "^0.9.1",
+    "style-loader": "^0.13.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start": "node config/webpack.dev.conf.js",
+    "dev": "webpack --watch --color --progress --config config/webpack.dev.conf.js",
+    "build": "webpack -p --color --progress --config config/webpack.prod.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiyali/serra.git"
+  },
+  "keywords": [
+    "css",
+    "beauty",
+    "optimize"
+  ],
+  "author": "Salam Hiyali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiyali/serra/issues"
+  },
+  "homepage": "https://github.com/hiyali/serra#readme"
+}

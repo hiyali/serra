@@ -1,0 +1,54 @@
+/* -------------------------------------------
+ * Grid system with flexbox
+ * support : https://css-tricks.com/snippets/css/a-guide-to-flexbox
+*/
+
+.{$namespace}-box
+
+  /* ----------- for container ------------ */
+
+  display: flex
+
+  for prop in row row-reverse column column-reverse
+    &.dir-{getName(prop)}
+      flex-direction: prop
+
+  for prop in nowrap wrap wrap-reverse
+    &.{prop}
+      flex-wrap: prop
+
+  for prop in flex-start flex-end center space-between space-around
+    &.content-{getName(prop)}
+      justify-content: prop
+
+  for prop in flex-start flex-end center stretch baseline
+    &.items-{getName(prop)}
+      align-items: prop
+
+  for prop in flex-start flex-end center stretch space-between space-around
+    &.align-{getName(prop)}
+      align-content: prop
+
+
+  /* ----------- for items ------------ */
+
+  /*
+  for n in 1..12
+    .item-{n}
+      flex: n
+    .grow-{n}
+      flex-grow: n
+    .shrink-{n}
+      flex-shrink: n
+    .basis-{n}
+      flex-basis: n
+
+  for n in -12..12
+    .order-{n}
+      order: n
+  // */
+
+  for prop in flex-start flex-end center baseline stretch
+    &.self-{getName(prop)}
+      align-self: prop
+
