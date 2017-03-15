@@ -1,7 +1,7 @@
 /* -------------------------------------------
  * Grid system with flexbox
- * support : https://css-tricks.com/snippets/css/a-guide-to-flexbox
-*/
+ * https://www.w3.org/TR/css-flexbox-1/
+ ------------------------------------------ */
 
 .{$namespace}-box
 
@@ -32,16 +32,17 @@
 
   /* ----------- for items ------------ */
 
-  /*
+  // *
   for n in 1..12
-    .item-{n}
-      flex: n
     .grow-{n}
       flex-grow: n
     .shrink-{n}
       flex-shrink: n
     .basis-{n}
       flex-basis: n
+  /*
+    .item-{n}
+      flex: n
 
   for n in -12..12
     .order-{n}
@@ -49,6 +50,6 @@
   // */
 
   for prop in flex-start flex-end center baseline stretch
-    &.self-{getName(prop)}
+    .self-{getName(prop)}
       align-self: prop
 
