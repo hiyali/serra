@@ -19,7 +19,7 @@ webpackDevConf.module.rules.push(
 webpackDevConf.plugins.push(
   new HtmlWebpackPlugin({
     filename: 'index.html',
-    template: 'example/index.html',
+    template: 'src/index.html',
     inject: true
   })
 )
