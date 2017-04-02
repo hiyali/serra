@@ -1,0 +1,40 @@
+/* -------------------------------------------
+ * Useful classes
+ ------------------------------------------ */
+
+/* text align */
+for prop in start center end
+  .text-{prop}
+    text-align: prop
+
+
+/* text ellipsis */
+[class*="text-ellipsis-"]
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  overflow: hidden
+
+.text-
+  for prop in 2..5
+    &ellipsis-{prop}
+      -webkit-line-clamp: prop
+
+  &ellipsis
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+
+
+/* background image */
+.bg-image
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  &.cover
+    background-size: cover
+  &.stretch
+    background-size: 100% 100%
+
+
+/* */
+

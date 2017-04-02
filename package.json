@@ -25,6 +25,7 @@
   "scripts": {
     "start": "node config/webpack.dev.conf.js",
     "dev": "node config/dev-server.js",
+    "build:watch": "webpack -p --color --progress --watch --config config/webpack.prod.conf.js",
     "build": "webpack -p --color --progress --config config/webpack.prod.conf.js"
   },
   "repository": {

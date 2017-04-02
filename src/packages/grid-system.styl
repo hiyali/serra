@@ -33,7 +33,9 @@
   /* ----------- for items ------------ */
 
   // *
-  for n in 1..12
+  [class*="grow-"]
+    flex-basis: 0
+  for n in 0..12
     .grow-{n}
       flex-grow: n
     .shrink-{n}
