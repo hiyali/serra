@@ -1,57 +1,57 @@
 /* -------------------------------------------
  * Grid system with flexbox
- * https://www.w3.org/TR/css-flexbox-1/
+ * https//www.w3.org/TR/css-flexbox-1/
  ------------------------------------------ */
 
 .{$namespace}-box
 
   /* ----------- for container ------------ */
 
-  display: flex
+  display flex
 
   for prop in row row-reverse column column-reverse
     &.dir-{getName(prop)}
-      flex-direction: prop
+      flex-direction prop
 
   for prop in nowrap wrap wrap-reverse
     &.{prop}
-      flex-wrap: prop
+      flex-wrap prop
 
   for prop in flex-start flex-end center space-between space-around
     &.content-{getName(prop)}
-      justify-content: prop
+      justify-content prop
 
   for prop in flex-start flex-end center stretch baseline
     &.items-{getName(prop)}
-      align-items: prop
+      align-items prop
 
   for prop in flex-start flex-end center stretch space-between space-around
     &.align-{getName(prop)}
-      align-content: prop
+      align-content prop
 
 
   /* ----------- for items ------------ */
 
   // *
   [class*="grow-"]
-    flex-basis: 0
+    flex-basis 0
   for n in 0..12
     .grow-{n}
-      flex-grow: n
+      flex-grow n
     .shrink-{n}
-      flex-shrink: n
+      flex-shrink n
     .basis-{n}
-      flex-basis: n
+      flex-basis n
   /*
     .item-{n}
-      flex: n
+      flex n
 
   for n in -12..12
     .order-{n}
-      order: n
+      order n
   // */
 
   for prop in flex-start flex-end center baseline stretch
     .self-{getName(prop)}
-      align-self: prop
+      align-self prop
 
